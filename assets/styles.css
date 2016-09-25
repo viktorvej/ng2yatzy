@@ -1,0 +1,48 @@
+/* Master Styles */
+h1 {
+  color: #a13;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+
+td {
+  border: 1px solid #ccc;
+}
+
+ul {
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+li {
+  list-style-type: none;
+  float:left;
+}
+
+a {
+  display: block;
+  padding: 5px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  border:1px solid #aaa;
+  margin: 5px;
+}
+
+a:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.save {
+  border-color: green; 
+  
+}
