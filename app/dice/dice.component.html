@@ -1,5 +1,12 @@
+<button (click)="rollTheDice()">Slå tärningar</button>
+
 <ul>
     <li *ngFor="let die of dice">
-        <a (click)="saveDie()">{{die.value}}</a>
+        <strong>
+            <a  (click)="toggleSaveDie(die)"
+                [class.save] = "die.save === true">
+                {{die.value}}
+            </a>
+        </strong>
     </li>
 </ul>
