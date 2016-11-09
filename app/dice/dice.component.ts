@@ -1,23 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Die } from './die';
-import { DiceService } from './dice.service';
+import { YatzyService } from '../yatzy.service';
 
 @Component({
+    moduleId: module.id,
     selector: 'vcy-dice',
-    templateUrl: './app/dice/dice.component.html'
+    templateUrl: 'dice.component.html'
 })
 export class DiceComponent implements OnInit{ 
     dice: Die[];
 
-    constructor(private diceService: DiceService) { }
+    constructor(private yatzyService: YatzyService) { }
 
     ngOnInit(): void {
-        this.dice = this.diceService.getDice();
+        this.dice = this.yatzyService.getDice();
     }
 
     rollTheDice() {
-        this.diceService.rollTheDice();
+        this.yatzyService.rollTheDice();
     }
 
     toggleSaveDie(die) {

@@ -1,0 +1,26 @@
+<table>
+  <tr>
+    <td>Spelare</td>
+    <td *ngFor="let player of players">
+        {{player.name}}
+    </td>
+  </tr>
+  <tr vcy-same-number></tr>
+  <tr vcy-same-number></tr>
+  <tr vcy-same-number></tr>
+  <tr vcy-same-number></tr>
+  <tr vcy-same-number></tr>
+  <tr vcy-same-number></tr>
+  <tr>
+    <td>Summa</td>
+    <td *ngFor="let player of players">
+      <!--{{calculateSum(player)}}-->
+    </td>
+  </tr>
+  <tr>
+    <td>Bonus</td>
+    <td *ngFor="let player of players">
+      <!--{{player.bonus}}-->
+    </td>
+  </tr>
+</table>
